@@ -237,14 +237,23 @@
                   <multiple>FALSE</multiple>
                   <options>
                     <index key="">- select a repository -</index>
+                    <index key="Delgado Community College ( http://www.dcc.edu/ )">dcc - Delgado Community College</index>
+                    <index key="East Baton Rouge Parish Library ( https://www.ebrpl.com/ )">ebrpl - East Baton Rouge Parish Library</index>
                     <index key="The Historic New Orleans Collection (http://www.hnoc.org)">hnoc - The Historic New Orleans Collection</index>
+                    <index key="Law Library of Louisiana ( https://www.lasc.org/law_library/library_information.asp )">lasc - Law Library of Louisiana</index>
                     <index key="Louisiana Tech University (http://www.latech.edu/tech/library)">latech - Louisiana Tech University </index>
                     <index key="Loyola University New Orleans Special Collections and Archives, New Orleans, LA. http://library.loyno.edu/research/speccoll/">loyno - Loyola University New Orleans Special Collections and Archives</index>
                     <index key="Louisiana State Museum ( http://lsm.crt.state.la.us/ )">lsm - Louisiana State Museum</index>
-                    <index key="Louisiana State University Libraries, Special Collections ( http://www.lib.lsu.edu/special )">lsu - Louisiana State University Libraries, Special Collections</index>
-                    <index key="Cartographic Information Center, Department of Geography &amp;amp; Anthropology, College of Humanities and Social Sciences, Louisiana State University (http://www.cic.lsu.edu/)">lsu-cic - Cartographic Information Center</index>
-                    <index key="Louisiana State University Museum of Art (http://www.lsumoa.org/)">lsu-moa - Louisiana State University Museum of Art</index>
+                    <index key="Louisiana State University, Agricultural Center ( http://www.lsuagcenter.com/ )">lsu-ag - LSU Agricultural Center</index>
+                    <index key="Cartographic Information Center, Department of Geography &amp;amp; Anthropology, College of Humanities and Social Sciences, Louisiana State University (http://www.cic.lsu.edu/)">lsu-cic - LSU Cartographic Information Center</index>
+                    <index key="Louisiana State University Libraries, Government Documents ( https://www.lib.lsu.edu/collections/govdocs )">lsu-govdocs - LSU Libraries, Government Documents</index>
+                    <index key="Louisiana State University Museum of Art (http://www.lsumoa.org/)">lsu-moa - LSU Museum of Art</index>
+                    <index key="Louisiana State University Libraries, Carter Music Resources Center ( https://www.lib.lsu.edu/collections/music )">lsu-music - LSU Libraries, Carter Music Resources Center</index>
+                    <index key="Louisiana State University Libraries, Special Collections ( http://www.lib.lsu.edu/special )">lsu-sc - LSU Libraries, Special Collections</index>
+                    <index key="Louisiana Sea Grant ( http://www.laseagrant.org/ )">lsu-sea - Louisiana Sea Grant</index>
                     <index key="T. Harry Williams Center for Oral History, Louisiana State University Libraries ( http://www.lib.lsu.edu/oralhistory )">lsu-thwcoh - T. Harry Williams Center for Oral History</index>
+                    <index key="Louisiana State University Libraries, University Archives ( https://www.lib.lsu.edu/special/archives )">lsu-ua - LSU Libraries, University Archives</index>
+                    <index key="Louisiana State University of Alexandria ( http://www.lsua.edu/library )">lsua - Louisiana State University of Alexandria</index>
                     <index key="LSU Health Sciences Center New Orleans ( http://www.lsuhsc.edu/library/ )">lsuhsc - LSU Health Sciences Center New Orleans</index>
                     <index key="Louisiana State University Health Sciences Center-Shreveport Medical Library (http://lib.sh.lsuhsc.edu)">lsuhscs - LSU Health Sciences Center Shreveport</index>
                     <index key="Louisiana State University in Shreveport Noel Memorial Library Archives and Special Collections (http://www.lsus.edu/library/archives.htm)">lsus - Louisiana State University in Shreveport</index>
@@ -252,14 +261,17 @@
                     <index key="Nicholls State University (http://www.nicholls.edu/library)">nicholls - Nicholls State University</index>
                     <index key="Northwestern State University of Louisiana ( http://library.nsula.edu/ )">nsu - Northwestern State University of Louisiana</index>
                     <index key="State Library of Louisiana (http://www.state.lib.la.us)">state - State Library of Louisiana</index>
-                    <index key="Southern University, John B Cade Library, Archives Department ( http://www.lib.subr.edu/ )">subr - Southern University, John B Cade Library</index>
+                    <index key="Southern University, John B Cade Library, Archives Department ( http://subr.libguides.com/c.php?g=413211 )">subr - Southern University, John B Cade Library</index>
                     <index key="Tulane University, Howard-Tilton Memorial Library ( http://library.tulane.edu/ )">tulane - Tulane University, Howard-Tilton Memorial Library</index>
                     <index key="University of Louisiana at Lafayette (http://library.louisiana.edu/)">ull - University of Louisiana at Lafayette</index>
                     <index key="Center for Louisiana Studies ( http://cls.louisiana.edu/ )">ull-cls - Center for Louisiana Studies</index>
                     <index key="Ernest J. Gaines Center, University of Louisiana at Lafayette (http://library.louisiana.edu/Gaines/)">ull-ejgc - Ernest J. Gaines Center</index>
                     <index key="University of Louisiana at Monroe Library (http://ulm.edu/library)">ulm - University of Louisiana at Monroe Library</index>
                     <index key="University of New Orleans (http://library.uno.edu)">uno - University of New Orleans</index>
+                    <index key="The Ethel &amp; Herman L. Midlo Center for New Orleans Studies">uno-midlo - UNO Midlo Center</index>
                     <index key="Ogden Museum of Southern Art, http://www.ogdenmuseum.org">uno-omsa - Ogden Museum of Southern Art</index>
+                    <index key="Vermilionville Living History and Folk Life Park ( http://www.vermilionville.org )">vville - Vermilionville </index>
+                    <index key="Webster Parish Library ( http://www.websterparishlibrary.org/ )">webster - Webster Parish Library</index>
                   </options>
                   <required>FALSE</required>
                   <resizable>FALSE</resizable>
@@ -416,7 +428,7 @@
         <properties>
           <type>fieldset</type>
           <access>TRUE</access>
-          <collapsed>TRUE</collapsed>
+          <collapsed>FALSE</collapsed>
           <collapsible>TRUE</collapsible>
           <description>Not applicable for new collections.</description>
           <disabled>FALSE</disabled>
@@ -434,6 +446,7 @@
               <access>TRUE</access>
               <collapsed>FALSE</collapsed>
               <collapsible>FALSE</collapsible>
+              <default_value>http://cdm16313.contentdm.oclc.org/cdm/search/collection/</default_value>
               <description>Enter the CONTENTdm URL corresponding to this collection's "Browse All" page (for link redirection of migrated collections).</description>
               <disabled>FALSE</disabled>
               <executes_submit_callback>FALSE</executes_submit_callback>
@@ -473,6 +486,7 @@
               <access>TRUE</access>
               <collapsed>FALSE</collapsed>
               <collapsible>FALSE</collapsible>
+              <default_value>http://cdm16313.contentdm.oclc.org/cdm/landingpage/collection/</default_value>
               <description>Enter the CONTENTdm URL corresponding to this collection's "Landing Page" (for link redirection of migrated collections).</description>
               <disabled>FALSE</disabled>
               <executes_submit_callback>FALSE</executes_submit_callback>
@@ -503,43 +517,51 @@
             </properties>
             <children/>
           </element>
-          <element name="deleteMigratedFrom">
-            <properties>
-              <type>markup</type>
-              <access>TRUE</access>
-              <collapsed>FALSE</collapsed>
-              <collapsible>FALSE</collapsible>
-              <disabled>FALSE</disabled>
-              <executes_submit_callback>FALSE</executes_submit_callback>
-              <multiple>FALSE</multiple>
-              <required>FALSE</required>
-              <resizable>FALSE</resizable>
-              <title>Delete Migrated From</title>
-              <tree>TRUE</tree>
-              <actions>
-                <create>NULL</create>
-                <read>
-                  <path>mods:identifier[@displayLabel='Migrated From']</path>
-                  <context>parent</context>
-                </read>
-                <update>NULL</update>
-                <delete>
-                  <path>mods:identifier[@displayLabel='Migrated From']</path>
-                  <context>parent</context>
-                </delete>
-              </actions>
-            </properties>
-            <children/>
-          </element>
         </children>
       </element>
-      <element name="abstract">
+      <element name="collSummary">
         <properties>
           <type>textarea</type>
           <access>TRUE</access>
           <collapsed>FALSE</collapsed>
           <collapsible>FALSE</collapsible>
-          <description>Enter a detailed summary of the collection contents and/or context. You may use basic HTML tags to enhance the description.</description>
+          <description>Enter a short summary of the collection contents and/or context. This text will appear in search results view.</description>
+          <disabled>FALSE</disabled>
+          <executes_submit_callback>FALSE</executes_submit_callback>
+          <multiple>FALSE</multiple>
+          <required>FALSE</required>
+          <resizable>FALSE</resizable>
+          <title>Collection Summary</title>
+          <tree>TRUE</tree>
+          <actions>
+            <create>
+              <path>self::node()</path>
+              <context>parent</context>
+              <schema/>
+              <type>xml</type>
+              <prefix>NULL</prefix>
+              <value>&lt;abstract displayLabel='Collection Summary'&gt;%value%&lt;/abstract&gt;</value>
+            </create>
+            <read>
+              <path>mods:abstract</path>
+              <context>parent</context>
+            </read>
+            <update>
+              <path>self::node()</path>
+              <context>self</context>
+            </update>
+            <delete>NULL</delete>
+          </actions>
+        </properties>
+        <children/>
+      </element>
+      <element name="collDescription">
+        <properties>
+          <type>textarea</type>
+          <access>TRUE</access>
+          <collapsed>FALSE</collapsed>
+          <collapsible>FALSE</collapsible>
+          <description>Enter a detailed description of the collection contents and/or context. You may use basic HTML tags to enhance the description.</description>
           <disabled>FALSE</disabled>
           <executes_submit_callback>FALSE</executes_submit_callback>
           <multiple>FALSE</multiple>
@@ -554,10 +576,10 @@
               <schema/>
               <type>xml</type>
               <prefix>NULL</prefix>
-              <value>&lt;abstract displayLabel='Collection Description'&gt;%value%&lt;/abstract&gt;</value>
+              <value>&lt;note type='content' displayLabel='Collection Description'&gt;%value%&lt;/note&gt;</value>
             </create>
             <read>
-              <path>mods:abstract</path>
+              <path>mods:note[@displayLabel='Collection Description']</path>
               <context>parent</context>
             </read>
             <update>
@@ -593,7 +615,7 @@
               <value>note</value>
             </create>
             <read>
-              <path>mods:note</path>
+              <path>mods:note[not(@displayLabel='Collection Description')]</path>
               <context>parent</context>
             </read>
             <update>
@@ -630,6 +652,45 @@
             </create>
             <read>
               <path>mods:accessCondition[@displayLabel='Contact Information']</path>
+              <context>parent</context>
+            </read>
+            <update>
+              <path>self::node()</path>
+              <context>self</context>
+            </update>
+            <delete>
+              <path>self::node()</path>
+              <context>self</context>
+            </delete>
+          </actions>
+        </properties>
+        <children/>
+      </element>
+      <element name="collID">
+        <properties>
+          <type>textfield</type>
+          <access>TRUE</access>
+          <collapsed>FALSE</collapsed>
+          <collapsible>FALSE</collapsible>
+          <description>Enter the Collection ID as it appears in the collection namespace; e.g. lsu-gfm.</description>
+          <disabled>FALSE</disabled>
+          <executes_submit_callback>FALSE</executes_submit_callback>
+          <multiple>FALSE</multiple>
+          <required>FALSE</required>
+          <resizable>FALSE</resizable>
+          <title>Collection ID</title>
+          <tree>TRUE</tree>
+          <actions>
+            <create>
+              <path>self::node()</path>
+              <context>parent</context>
+              <schema/>
+              <type>xml</type>
+              <prefix>NULL</prefix>
+              <value>&lt;identifier type='local' displayLabel='Collection ID'&gt;%value%&lt;/identifier&gt;</value>
+            </create>
+            <read>
+              <path>mods:identifier[@displayLabel='Collection ID']</path>
               <context>parent</context>
             </read>
             <update>
