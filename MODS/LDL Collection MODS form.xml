@@ -240,7 +240,7 @@
                     <index key="Delgado Community College ( http://www.dcc.edu/ )">dcc - Delgado Community College</index>
                     <index key="East Baton Rouge Parish Library ( https://www.ebrpl.com/ )">ebrpl - East Baton Rouge Parish Library</index>
                     <index key="The Historic New Orleans Collection (http://www.hnoc.org)">hnoc - The Historic New Orleans Collection</index>
-                    <index key="Law Library of Louisiana ( https://www.lasc.org/law_library/library_information.asp )">lasc - Law Library of Louisiana</index>
+                    <index key="Law Library of Louisiana ( http://lasc.libguides.com/ )">lasc - Law Library of Louisiana</index>
                     <index key="Louisiana Tech University (http://www.latech.edu/tech/library)">latech - Louisiana Tech University </index>
                     <index key="Loyola University New Orleans Special Collections and Archives, New Orleans, LA. http://library.loyno.edu/research/speccoll/">loyno - Loyola University New Orleans Special Collections and Archives</index>
                     <index key="Louisiana State Museum ( http://lsm.crt.state.la.us/ )">lsm - Louisiana State Museum</index>
@@ -263,6 +263,7 @@
                     <index key="State Library of Louisiana (http://www.state.lib.la.us)">state - State Library of Louisiana</index>
                     <index key="Southern University, John B Cade Library, Archives Department ( http://subr.libguides.com/c.php?g=413211 )">subr - Southern University, John B Cade Library</index>
                     <index key="Tulane University, Howard-Tilton Memorial Library ( http://library.tulane.edu/ )">tulane - Tulane University, Howard-Tilton Memorial Library</index>
+                    <index key="University Hospital and Clinics">uhc - University Hospital and Clinics</index>
                     <index key="University of Louisiana at Lafayette (http://library.louisiana.edu/)">ull - University of Louisiana at Lafayette</index>
                     <index key="Center for Louisiana Studies ( http://cls.louisiana.edu/ )">ull-cls - Center for Louisiana Studies</index>
                     <index key="Ernest J. Gaines Center, University of Louisiana at Lafayette (http://library.louisiana.edu/Gaines/)">ull-ejgc - Ernest J. Gaines Center</index>
@@ -428,7 +429,7 @@
         <properties>
           <type>fieldset</type>
           <access>TRUE</access>
-          <collapsed>FALSE</collapsed>
+          <collapsed>TRUE</collapsed>
           <collapsible>TRUE</collapsible>
           <description>Not applicable for new collections.</description>
           <disabled>FALSE</disabled>
@@ -446,7 +447,6 @@
               <access>TRUE</access>
               <collapsed>FALSE</collapsed>
               <collapsible>FALSE</collapsible>
-              <default_value>http://cdm16313.contentdm.oclc.org/cdm/search/collection/</default_value>
               <description>Enter the CONTENTdm URL corresponding to this collection's "Browse All" page (for link redirection of migrated collections).</description>
               <disabled>FALSE</disabled>
               <executes_submit_callback>FALSE</executes_submit_callback>
@@ -486,7 +486,6 @@
               <access>TRUE</access>
               <collapsed>FALSE</collapsed>
               <collapsible>FALSE</collapsible>
-              <default_value>http://cdm16313.contentdm.oclc.org/cdm/landingpage/collection/</default_value>
               <description>Enter the CONTENTdm URL corresponding to this collection's "Landing Page" (for link redirection of migrated collections).</description>
               <disabled>FALSE</disabled>
               <executes_submit_callback>FALSE</executes_submit_callback>
