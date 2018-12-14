@@ -99,6 +99,45 @@
           </element>
         </children>
       </element>
+      <element name="collID">
+        <properties>
+          <type>textfield</type>
+          <access>TRUE</access>
+          <collapsed>FALSE</collapsed>
+          <collapsible>FALSE</collapsible>
+          <description>Enter the Collection ID as it appears in the collection namespace; e.g. lsu-gfm.</description>
+          <disabled>FALSE</disabled>
+          <executes_submit_callback>FALSE</executes_submit_callback>
+          <multiple>FALSE</multiple>
+          <required>FALSE</required>
+          <resizable>FALSE</resizable>
+          <title>Collection Identifier</title>
+          <tree>TRUE</tree>
+          <actions>
+            <create>
+              <path>self::node()</path>
+              <context>parent</context>
+              <schema/>
+              <type>xml</type>
+              <prefix>NULL</prefix>
+              <value>&lt;identifier type='local' displayLabel='Collection ID'&gt;%value%&lt;/identifier&gt;</value>
+            </create>
+            <read>
+              <path>mods:identifier[@displayLabel='Collection ID']</path>
+              <context>parent</context>
+            </read>
+            <update>
+              <path>self::node()</path>
+              <context>self</context>
+            </update>
+            <delete>
+              <path>self::node()</path>
+              <context>self</context>
+            </delete>
+          </actions>
+        </properties>
+        <children/>
+      </element>
       <element name="name">
         <properties>
           <type>tabs</type>
@@ -110,7 +149,7 @@
           <multiple>FALSE</multiple>
           <required>FALSE</required>
           <resizable>FALSE</resizable>
-          <title>LDC Collection Owner</title>
+          <title>Contributing Repository</title>
           <tree>TRUE</tree>
         </properties>
         <children>
@@ -196,13 +235,13 @@
                   <executes_submit_callback>FALSE</executes_submit_callback>
                   <multiple>FALSE</multiple>
                   <options>
-                    <index key="Owning Institution">Owning Institution</index>
+                    <index key="Contributing Repository">Contributing Repository</index>
                   </options>
                   <required>FALSE</required>
                   <resizable>FALSE</resizable>
                   <title>@Label</title>
                   <tree>TRUE</tree>
-                  <value>Owning Institution</value>
+                  <value>Contributing Repository</value>
                   <actions>
                     <create>
                       <path>self::node()</path>
@@ -237,42 +276,42 @@
                   <multiple>FALSE</multiple>
                   <options>
                     <index key="">- select a repository -</index>
-                    <index key="Delgado Community College ( http://www.dcc.edu/ )">dcc - Delgado Community College</index>
-                    <index key="East Baton Rouge Parish Library ( https://www.ebrpl.com/ )">ebrpl - East Baton Rouge Parish Library</index>
-                    <index key="The Historic New Orleans Collection (http://www.hnoc.org)">hnoc - The Historic New Orleans Collection</index>
-                    <index key="Law Library of Louisiana ( http://lasc.libguides.com/ )">lasc - Law Library of Louisiana</index>
-                    <index key="Louisiana Tech University (http://www.latech.edu/tech/library)">latech - Louisiana Tech University </index>
-                    <index key="Loyola University New Orleans Special Collections and Archives, New Orleans, LA. http://library.loyno.edu/research/speccoll/">loyno - Loyola University New Orleans Special Collections and Archives</index>
-                    <index key="Louisiana State Museum ( http://lsm.crt.state.la.us/ )">lsm - Louisiana State Museum</index>
-                    <index key="Louisiana State University, Agricultural Center ( http://www.lsuagcenter.com/ )">lsu-ag - LSU Agricultural Center</index>
-                    <index key="Cartographic Information Center, Department of Geography &amp;amp; Anthropology, College of Humanities and Social Sciences, Louisiana State University (http://www.cic.lsu.edu/)">lsu-cic - LSU Cartographic Information Center</index>
-                    <index key="Louisiana State University Libraries, Government Documents ( https://www.lib.lsu.edu/collections/govdocs )">lsu-govdocs - LSU Libraries, Government Documents</index>
-                    <index key="Louisiana State University Museum of Art (http://www.lsumoa.org/)">lsu-moa - LSU Museum of Art</index>
-                    <index key="Louisiana State University Libraries, Carter Music Resources Center ( https://www.lib.lsu.edu/collections/music )">lsu-music - LSU Libraries, Carter Music Resources Center</index>
-                    <index key="Louisiana State University Libraries, Special Collections ( http://www.lib.lsu.edu/special )">lsu-sc - LSU Libraries, Special Collections</index>
-                    <index key="Louisiana Sea Grant ( http://www.laseagrant.org/ )">lsu-sea - Louisiana Sea Grant</index>
-                    <index key="T. Harry Williams Center for Oral History, Louisiana State University Libraries ( http://www.lib.lsu.edu/oralhistory )">lsu-thwcoh - T. Harry Williams Center for Oral History</index>
-                    <index key="Louisiana State University Libraries, University Archives ( https://www.lib.lsu.edu/special/archives )">lsu-ua - LSU Libraries, University Archives</index>
-                    <index key="Louisiana State University of Alexandria ( http://www.lsua.edu/library )">lsua - Louisiana State University of Alexandria</index>
-                    <index key="LSU Health Sciences Center New Orleans ( http://www.lsuhsc.edu/library/ )">lsuhsc - LSU Health Sciences Center New Orleans</index>
-                    <index key="Louisiana State University Health Sciences Center-Shreveport Medical Library (http://lib.sh.lsuhsc.edu)">lsuhscs - LSU Health Sciences Center Shreveport</index>
-                    <index key="Louisiana State University in Shreveport Noel Memorial Library Archives and Special Collections (http://www.lsus.edu/library/archives.htm)">lsus - Louisiana State University in Shreveport</index>
-                    <index key="McNeese State University (http://libguides.mcneese.edu/archives)">mcneese - McNeese State University</index>
-                    <index key="Nicholls State University (http://www.nicholls.edu/library)">nicholls - Nicholls State University</index>
-                    <index key="Northwestern State University of Louisiana ( http://library.nsula.edu/ )">nsu - Northwestern State University of Louisiana</index>
-                    <index key="State Library of Louisiana (http://www.state.lib.la.us)">state - State Library of Louisiana</index>
-                    <index key="Southern University, John B Cade Library, Archives Department ( http://subr.libguides.com/c.php?g=413211 )">subr - Southern University, John B Cade Library</index>
-                    <index key="Tulane University, Howard-Tilton Memorial Library ( http://library.tulane.edu/ )">tulane - Tulane University, Howard-Tilton Memorial Library</index>
-                    <index key="University Hospital and Clinics">uhc - University Hospital and Clinics</index>
-                    <index key="University of Louisiana at Lafayette (http://library.louisiana.edu/)">ull - University of Louisiana at Lafayette</index>
-                    <index key="Center for Louisiana Studies ( http://cls.louisiana.edu/ )">ull-cls - Center for Louisiana Studies</index>
-                    <index key="Ernest J. Gaines Center, University of Louisiana at Lafayette (http://library.louisiana.edu/Gaines/)">ull-ejgc - Ernest J. Gaines Center</index>
-                    <index key="University of Louisiana at Monroe Library (http://ulm.edu/library)">ulm - University of Louisiana at Monroe Library</index>
-                    <index key="University of New Orleans (http://library.uno.edu)">uno - University of New Orleans</index>
-                    <index key="The Ethel &amp; Herman L. Midlo Center for New Orleans Studies">uno-midlo - UNO Midlo Center</index>
-                    <index key="Ogden Museum of Southern Art, http://www.ogdenmuseum.org">uno-omsa - Ogden Museum of Southern Art</index>
-                    <index key="Vermilionville Living History and Folk Life Park ( http://www.vermilionville.org )">vville - Vermilionville </index>
-                    <index key="Webster Parish Library ( http://www.websterparishlibrary.org/ )">webster - Webster Parish Library</index>
+                    <index key="Delgado Community College">dcc - Delgado Community College</index>
+                    <index key="East Baton Rouge Parish Library">ebrpl - East Baton Rouge Parish Library</index>
+                    <index key="Historic New Orleans Collection">hnoc - The Historic New Orleans Collection</index>
+                    <index key="Law Library of Louisiana">lasc - Law Library of Louisiana</index>
+                    <index key="Louisiana Tech University. Prescott Memorial Library">latech - Louisiana Tech University</index>
+                    <index key="Loyola University (New Orleans, La.)">loyno - Loyola University New Orleans</index>
+                    <index key="Louisiana State Museum">lsm - Louisiana State Museum</index>
+                    <index key="Louisiana State University (Baton Rouge, La.)">lsu - Louisiana State University</index>
+                    <index key="Louisiana State University Agricultural Center">lsu-ag - LSU Agricultural Center</index>
+                    <index key="Louisiana State University (Baton Rouge, La.). Department of Geography and Anthropology. Cartographic Information Center">lsu-cic - LSU Cartographic Information Center</index>
+                    <index key="LSU Libraries. Government Documents">lsu-govdocs - LSU Libraries Government Documents</index>
+                    <index key="Louisiana State University (Baton Rouge, La.). Museum of Art">lsu-moa - LSU Museum of Art</index>
+                    <index key="LSU Libraries. Carter Music Resources Center">lsu-music - Carter Music Resources Center</index>
+                    <index key="LSU Libraries. Special Collections">lsu-sc - LSU Libraries Special Collections</index>
+                    <index key="Louisiana Sea Grant College Program">lsu-sea - Louisiana Sea Grant</index>
+                    <index key="Louisiana State University (Baton Rouge, La.). T. Harry Williams Center for Oral History">lsu-thwcoh - T. Harry Williams Center for Oral History</index>
+                    <index key="LSU Libraries. Special Collections">lsu-ua - LSU University Archives</index>
+                    <index key="Louisiana State University at Alexandria">lsua - LSU of Alexandria</index>
+                    <index key="Louisiana State University Health Sciences Center at New Orleans">lsuhsc - Louisiana State University Health New Orleans</index>
+                    <index key="Louisiana State University in Shreveport, Medical Center Library">lsuhscs - Louisiana State University Health Shreveport</index>
+                    <index key="Louisiana State University in Shreveport. Noel Memorial Library">lsus - Louisiana State University Shreveport</index>
+                    <index key="McNeese State University. Frazar Memorial Library">mcneese - McNeese State University</index>
+                    <index key="Nicholls State University. Library">nicholls - Nicholls State University</index>
+                    <index key="Northwestern State University of Louisiana">nsu - Northwestern State University</index>
+                    <index key="State Library of Louisiana">state - State Library of Louisiana</index>
+                    <index key="Southern University Library">subr - Southern University and A&amp;M College</index>
+                    <index key="Tulane University. Howard-Tilton Memorial Library">tulane - Tulane University</index>
+                    <index key="University of Louisiana at Lafayette. Edith Garland Dupré Library">ull - University of Louisiana at Lafayette</index>
+                    <index key="University of Louisiana at Lafayette. Center for Louisiana Studies">ull-cls - Center for Louisiana Studies</index>
+                    <index key="University of Louisiana at Lafayette. Ernest J. Gaines Center">ull-ejgc - Ernest J. Gaines Center</index>
+                    <index key="University of Louisiana at Monroe">ulm - University of Louisiana Monroe</index>
+                    <index key="University of New Orleans. Earl K. Long Library">uno - University of New Orleans</index>
+                    <index key="University of New Orleans. Midlo Center for New Orleans Studies">uno-midlo - Midlo Center for New Orleans Studies</index>
+                    <index key="University of New Orleans. Ogden Museum of Southern Art">uno-omsa - Ogden Museum of Southern Art</index>
+                    <index key="Vermilionville Living History Museum and Folk Life Park">vville - Vermilionville Living History Museum and Folk Life Park</index>
+                    <index key="Webster Parish Library">webster - Webster Parish Library</index>
                   </options>
                   <required>FALSE</required>
                   <resizable>FALSE</resizable>
@@ -312,32 +351,6 @@
                   <disabled>FALSE</disabled>
                   <executes_submit_callback>FALSE</executes_submit_callback>
                   <multiple>FALSE</multiple>
-                  <options>
-                    <index key="">- select a repository -</index>
-                    <index key="The Historic New Orleans Collection (http://www.hnoc.org)">hnoc - The Historic New Orleans Collection</index>
-                    <index key="Louisiana Tech University (http://www.latech.edu/tech/library)">latech - Louisiana Tech University </index>
-                    <index key="Loyola University New Orleans Special Collections and Archives, New Orleans, LA. http://library.loyno.edu/research/speccoll/">loyno - Loyola University New Orleans Special Collections and Archives</index>
-                    <index key="Louisiana State Museum ( http://lsm.crt.state.la.us/ )">lsm - Louisiana State Museum</index>
-                    <index key="Louisiana State University Libraries, Special Collections ( http://www.lib.lsu.edu/special )">lsu - Louisiana State University Libraries, Special Collections</index>
-                    <index key="Cartographic Information Center, Department of Geography &amp;amp; Anthropology, College of Humanities and Social Sciences, Louisiana State University (http://www.cic.lsu.edu/)">lsu-cic - Cartographic Information Center</index>
-                    <index key="Louisiana State University Museum of Art (http://www.lsumoa.org/)">lsu-moa - Louisiana State University Museum of Art</index>
-                    <index key="T. Harry Williams Center for Oral History, Louisiana State University Libraries ( http://www.lib.lsu.edu/oralhistory )">lsu-thwcoh - T. Harry Williams Center for Oral History</index>
-                    <index key="LSU Health Sciences Center New Orleans ( http://www.lsuhsc.edu/library/ )">lsuhsc - LSU Health Sciences Center New Orleans</index>
-                    <index key="Louisiana State University Health Sciences Center-Shreveport Medical Library (http://lib.sh.lsuhsc.edu)">lsuhscs - LSU Health Sciences Center Shreveport</index>
-                    <index key="Louisiana State University in Shreveport Noel Memorial Library Archives and Special Collections (http://www.lsus.edu/library/archives.htm)">lsus - Louisiana State University in Shreveport</index>
-                    <index key="McNeese State University (http://libguides.mcneese.edu/archives)">mcneese - McNeese State University</index>
-                    <index key="Nicholls State University (http://www.nicholls.edu/library)">nicholls - Nicholls State University</index>
-                    <index key="Northwestern State University of Louisiana ( http://library.nsula.edu/ )">nsu - Northwestern State University of Louisiana</index>
-                    <index key="State Library of Louisiana (http://www.state.lib.la.us)">state - State Library of Louisiana</index>
-                    <index key="Southern University, John B Cade Library, Archives Department ( http://www.lib.subr.edu/ )">subr - Southern University, John B Cade Library</index>
-                    <index key="Tulane University, Howard-Tilton Memorial Library ( http://library.tulane.edu/ )">tulane - Tulane University, Howard-Tilton Memorial Library</index>
-                    <index key="University of Louisiana at Lafayette (http://library.louisiana.edu/)">ull - University of Louisiana at Lafayette</index>
-                    <index key="Center for Louisiana Studies ( http://cls.louisiana.edu/ )">ull-cls - Center for Louisiana Studies</index>
-                    <index key="Ernest J. Gaines Center, University of Louisiana at Lafayette (http://library.louisiana.edu/Gaines/)">ull-ejgc - Ernest J. Gaines Center</index>
-                    <index key="University of Louisiana at Monroe Library (http://ulm.edu/library)">ulm - University of Louisiana at Monroe Library</index>
-                    <index key="University of New Orleans (http://library.uno.edu)">uno - University of New Orleans</index>
-                    <index key="Ogden Museum of Southern Art, http://www.ogdenmuseum.org">uno-omsa - Ogden Museum of Southern Art</index>
-                  </options>
                   <required>FALSE</required>
                   <resizable>FALSE</resizable>
                   <title>Role</title>
@@ -350,8 +363,7 @@
                       <type>xml</type>
                       <prefix>NULL</prefix>
                       <value>&lt;role&gt;
-  &lt;roleTerm authority='marcrelator' type='text'&gt;Repository&lt;/roleTerm&gt;
-  &lt;roleTerm authority='marcrelator' type='code'&gt;rps&lt;/roleTerm&gt;
+&lt;roleTerm type='text' authority='marcrelator' authorityURI='http://id.loc.gov/vocabulary/relators' valueURI='http://id.loc.gov/vocabulary/relators/rps'&gt;Repository&lt;/roleTerm&gt;
 &lt;/role&gt;</value>
                     </create>
                     <read>
@@ -408,13 +420,57 @@
               <path>self::node()</path>
               <context>parent</context>
               <schema/>
-              <type>element</type>
+              <type>xml</type>
               <prefix>NULL</prefix>
-              <value>typeOfResource</value>
+              <value>&lt;typeOfResource collection="yes"&gt;%value%&lt;/typeOfResource&gt;</value>
             </create>
             <read>
               <path>mods:typeOfResource</path>
               <context>parent</context>
+            </read>
+            <update>
+              <path>self::node()</path>
+              <context>self</context>
+            </update>
+            <delete>NULL</delete>
+          </actions>
+        </properties>
+        <children/>
+      </element>
+      <element name="digitalOrigin">
+        <properties>
+          <type>select</type>
+          <access>TRUE</access>
+          <collapsed>FALSE</collapsed>
+          <collapsible>FALSE</collapsible>
+          <default_value>reformatted digital</default_value>
+          <description>Use the drop down menu to select the method by which a resource achieved digital form.</description>
+          <disabled>FALSE</disabled>
+          <executes_submit_callback>FALSE</executes_submit_callback>
+          <multiple>FALSE</multiple>
+          <options>
+            <index key="born digital">born digital</index>
+            <index key="reformatted digital">reformatted digital</index>
+            <index key="digitized microfilm">digitized microfilm</index>
+            <index key="digitized other analog">digitized other analog</index>
+            <index key=""/>
+          </options>
+          <required>FALSE</required>
+          <resizable>FALSE</resizable>
+          <title>Digital Origin</title>
+          <tree>TRUE</tree>
+          <actions>
+            <create>
+              <path>/mods:mods/mods:physicalDescription</path>
+              <context>document</context>
+              <schema/>
+              <type>element</type>
+              <prefix>NULL</prefix>
+              <value>digitalOrigin</value>
+            </create>
+            <read>
+              <path>/mods:mods/mods:physicalDescription/mods:digitalOrigin</path>
+              <context>document</context>
             </read>
             <update>
               <path>self::node()</path>
@@ -560,7 +616,7 @@
           <access>TRUE</access>
           <collapsed>FALSE</collapsed>
           <collapsible>FALSE</collapsible>
-          <description>Enter a detailed description of the collection contents and/or context. You may use basic HTML tags to enhance the description.</description>
+          <description>Enter a detailed description of the collection contents and/or context. You may use basic HTML tags to enhance the description. This text appears as the Description on the collection home page.</description>
           <disabled>FALSE</disabled>
           <executes_submit_callback>FALSE</executes_submit_callback>
           <multiple>FALSE</multiple>
@@ -665,31 +721,31 @@
         </properties>
         <children/>
       </element>
-      <element name="collID">
+      <element name="recordInfo">
         <properties>
-          <type>textfield</type>
+          <type>fieldset</type>
           <access>TRUE</access>
           <collapsed>FALSE</collapsed>
           <collapsible>FALSE</collapsible>
-          <description>Enter the Collection ID as it appears in the collection namespace; e.g. lsu-gfm.</description>
+          <description>Information about the metadata record.</description>
           <disabled>FALSE</disabled>
           <executes_submit_callback>FALSE</executes_submit_callback>
           <multiple>FALSE</multiple>
           <required>FALSE</required>
           <resizable>FALSE</resizable>
-          <title>Collection ID</title>
+          <title>Record Info</title>
           <tree>TRUE</tree>
           <actions>
             <create>
-              <path>self::node()</path>
-              <context>parent</context>
+              <path>/mods:mods</path>
+              <context>document</context>
               <schema/>
-              <type>xml</type>
+              <type>element</type>
               <prefix>NULL</prefix>
-              <value>&lt;identifier type='local' displayLabel='Collection ID'&gt;%value%&lt;/identifier&gt;</value>
+              <value>recordInfo</value>
             </create>
             <read>
-              <path>mods:identifier[@displayLabel='Collection ID']</path>
+              <path>mods:recordInfo</path>
               <context>parent</context>
             </read>
             <update>
@@ -702,7 +758,155 @@
             </delete>
           </actions>
         </properties>
-        <children/>
+        <children>
+          <element name="recordCreationDate">
+            <properties>
+              <type>textfield</type>
+              <access>TRUE</access>
+              <collapsed>FALSE</collapsed>
+              <collapsible>FALSE</collapsible>
+              <description>The date on which the original MODS record was first created, in format YYYY-MM-DD.</description>
+              <disabled>FALSE</disabled>
+              <executes_submit_callback>FALSE</executes_submit_callback>
+              <multiple>FALSE</multiple>
+              <required>FALSE</required>
+              <resizable>FALSE</resizable>
+              <title>Record Creation Date</title>
+              <tree>TRUE</tree>
+              <actions>
+                <create>
+                  <path>self::node()</path>
+                  <context>parent</context>
+                  <schema/>
+                  <type>element</type>
+                  <prefix>NULL</prefix>
+                  <value>recordCreationDate</value>
+                </create>
+                <read>
+                  <path>mods:recordCreationDate</path>
+                  <context>parent</context>
+                </read>
+                <update>
+                  <path>self::node()</path>
+                  <context>self</context>
+                </update>
+                <delete>NULL</delete>
+              </actions>
+            </properties>
+            <children/>
+          </element>
+          <element name="recordChangeDate">
+            <properties>
+              <type>textfield</type>
+              <access>TRUE</access>
+              <collapsed>FALSE</collapsed>
+              <collapsible>FALSE</collapsible>
+              <description>The date on which the MODS record was last modified, in format YYYY-MM-DD.</description>
+              <disabled>FALSE</disabled>
+              <executes_submit_callback>FALSE</executes_submit_callback>
+              <multiple>FALSE</multiple>
+              <required>FALSE</required>
+              <resizable>FALSE</resizable>
+              <title>Record Change Date</title>
+              <tree>TRUE</tree>
+              <actions>
+                <create>
+                  <path>self::node()</path>
+                  <context>parent</context>
+                  <schema/>
+                  <type>element</type>
+                  <prefix>NULL</prefix>
+                  <value>recordChangeDate</value>
+                </create>
+                <read>
+                  <path>mods:recordChangeDate</path>
+                  <context>parent</context>
+                </read>
+                <update>
+                  <path>self::node()</path>
+                  <context>self</context>
+                </update>
+                <delete>NULL</delete>
+              </actions>
+            </properties>
+            <children/>
+          </element>
+          <element name="recordContentSource">
+            <properties>
+              <type>textfield</type>
+              <access>TRUE</access>
+              <collapsed>FALSE</collapsed>
+              <collapsible>FALSE</collapsible>
+              <description>The creator of the original MODS record. For original metadata records, enter the creator of the record in the format "institution_code/cataloger_initials." 
+</description>
+              <disabled>FALSE</disabled>
+              <executes_submit_callback>FALSE</executes_submit_callback>
+              <multiple>FALSE</multiple>
+              <required>FALSE</required>
+              <resizable>FALSE</resizable>
+              <title>Record Content Source</title>
+              <tree>TRUE</tree>
+              <actions>
+                <create>
+                  <path>self::node()</path>
+                  <context>parent</context>
+                  <schema/>
+                  <type>xml</type>
+                  <prefix>NULL</prefix>
+                  <value>&lt;recordContentSource authority="local"&gt;%value%&lt;/recordContentSource&gt;</value>
+                </create>
+                <read>
+                  <path>mods:recordContentSource</path>
+                  <context>parent</context>
+                </read>
+                <update>
+                  <path>self::node()</path>
+                  <context>self</context>
+                </update>
+                <delete>NULL</delete>
+              </actions>
+            </properties>
+            <children/>
+          </element>
+          <element name="languageOfCataloging">
+            <properties>
+              <type>textfield</type>
+              <access>TRUE</access>
+              <collapsed>FALSE</collapsed>
+              <collapsible>FALSE</collapsible>
+              <default_value>eng</default_value>
+              <description>The language of the text of the cataloging in the MODS record. Use the ISO alpha-3 encoding for the language used in cataloging the record. Note that this does not refer to the language of the resource itself.
+</description>
+              <disabled>FALSE</disabled>
+              <executes_submit_callback>FALSE</executes_submit_callback>
+              <multiple>FALSE</multiple>
+              <required>FALSE</required>
+              <resizable>FALSE</resizable>
+              <title>Language of Cataloging</title>
+              <tree>TRUE</tree>
+              <actions>
+                <create>
+                  <path>self::node()</path>
+                  <context>parent</context>
+                  <schema/>
+                  <type>xml</type>
+                  <prefix>NULL</prefix>
+                  <value>&lt;languageOfCataloging&gt;&lt;languageTerm type="code" authority="iso639-2b"&gt;%value%&lt;/languageTerm&gt;&lt;/languageOfCataloging&gt;</value>
+                </create>
+                <read>
+                  <path>mods:languageOfCataloging/mods:languageTerm</path>
+                  <context>parent</context>
+                </read>
+                <update>
+                  <path>self::node()</path>
+                  <context>self</context>
+                </update>
+                <delete>NULL</delete>
+              </actions>
+            </properties>
+            <children/>
+          </element>
+        </children>
       </element>
     </children>
   </form>
