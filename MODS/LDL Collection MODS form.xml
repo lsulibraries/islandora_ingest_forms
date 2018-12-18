@@ -289,10 +289,9 @@
                     <index key="LSU Libraries. Government Documents">lsu-govdocs - LSU Libraries Government Documents</index>
                     <index key="Louisiana State University (Baton Rouge, La.). Museum of Art">lsu-moa - LSU Museum of Art</index>
                     <index key="LSU Libraries. Carter Music Resources Center">lsu-music - Carter Music Resources Center</index>
-                    <index key="LSU Libraries. Special Collections">lsu-sc - LSU Libraries Special Collections</index>
+                    <index key="LSU Libraries. Special Collections">lsu-sc or lsu-ua - LSU Special Collections/University Archives</index>
                     <index key="Louisiana Sea Grant College Program">lsu-sea - Louisiana Sea Grant</index>
                     <index key="Louisiana State University (Baton Rouge, La.). T. Harry Williams Center for Oral History">lsu-thwcoh - T. Harry Williams Center for Oral History</index>
-                    <index key="LSU Libraries. Special Collections">lsu-ua - LSU University Archives</index>
                     <index key="Louisiana State University at Alexandria">lsua - LSU of Alexandria</index>
                     <index key="Louisiana State University Health Sciences Center at New Orleans">lsuhsc - Louisiana State University Health New Orleans</index>
                     <index key="Louisiana State University in Shreveport, Medical Center Library">lsuhscs - Louisiana State University Health Shreveport</index>
@@ -303,7 +302,7 @@
                     <index key="State Library of Louisiana">state - State Library of Louisiana</index>
                     <index key="Southern University Library">subr - Southern University and A&amp;M College</index>
                     <index key="Tulane University. Howard-Tilton Memorial Library">tulane - Tulane University</index>
-                    <index key="University of Louisiana at Lafayette. Edith Garland Dupré Library">ull - University of Louisiana at Lafayette</index>
+                    <index key="University of Louisiana at Lafayette. Edith Garland Dupr&#xE9; Library">ull - University of Louisiana at Lafayette</index>
                     <index key="University of Louisiana at Lafayette. Center for Louisiana Studies">ull-cls - Center for Louisiana Studies</index>
                     <index key="University of Louisiana at Lafayette. Ernest J. Gaines Center">ull-ejgc - Ernest J. Gaines Center</index>
                     <index key="University of Louisiana at Monroe">ulm - University of Louisiana Monroe</index>
@@ -574,42 +573,6 @@
           </element>
         </children>
       </element>
-      <element name="collSummary">
-        <properties>
-          <type>textarea</type>
-          <access>TRUE</access>
-          <collapsed>FALSE</collapsed>
-          <collapsible>FALSE</collapsible>
-          <description>Enter a short summary of the collection contents and/or context. This text will appear in search results view.</description>
-          <disabled>FALSE</disabled>
-          <executes_submit_callback>FALSE</executes_submit_callback>
-          <multiple>FALSE</multiple>
-          <required>FALSE</required>
-          <resizable>FALSE</resizable>
-          <title>Collection Summary</title>
-          <tree>TRUE</tree>
-          <actions>
-            <create>
-              <path>self::node()</path>
-              <context>parent</context>
-              <schema/>
-              <type>xml</type>
-              <prefix>NULL</prefix>
-              <value>&lt;abstract displayLabel='Collection Summary'&gt;%value%&lt;/abstract&gt;</value>
-            </create>
-            <read>
-              <path>mods:abstract</path>
-              <context>parent</context>
-            </read>
-            <update>
-              <path>self::node()</path>
-              <context>self</context>
-            </update>
-            <delete>NULL</delete>
-          </actions>
-        </properties>
-        <children/>
-      </element>
       <element name="collDescription">
         <properties>
           <type>textarea</type>
@@ -641,7 +604,49 @@
               <path>self::node()</path>
               <context>self</context>
             </update>
-            <delete>NULL</delete>
+            <delete>
+              <path>self::node()</path>
+              <context>self</context>
+            </delete>
+          </actions>
+        </properties>
+        <children/>
+      </element>
+      <element name="collSummary">
+        <properties>
+          <type>textarea</type>
+          <access>TRUE</access>
+          <collapsed>FALSE</collapsed>
+          <collapsible>FALSE</collapsible>
+          <description>Enter a short summary of the collection contents and/or context. Either repeat or summarize the longer Collection Description field. This text will appear in search results view.</description>
+          <disabled>FALSE</disabled>
+          <executes_submit_callback>FALSE</executes_submit_callback>
+          <multiple>FALSE</multiple>
+          <required>FALSE</required>
+          <resizable>FALSE</resizable>
+          <title>Collection Summary</title>
+          <tree>TRUE</tree>
+          <actions>
+            <create>
+              <path>self::node()</path>
+              <context>parent</context>
+              <schema/>
+              <type>xml</type>
+              <prefix>NULL</prefix>
+              <value>&lt;abstract displayLabel='Collection Summary'&gt;%value%&lt;/abstract&gt;</value>
+            </create>
+            <read>
+              <path>mods:abstract</path>
+              <context>parent</context>
+            </read>
+            <update>
+              <path>self::node()</path>
+              <context>self</context>
+            </update>
+            <delete>
+              <path>self::node()</path>
+              <context>self</context>
+            </delete>
           </actions>
         </properties>
         <children/>
@@ -677,7 +682,10 @@
               <path>self::node()</path>
               <context>self</context>
             </update>
-            <delete>NULL</delete>
+            <delete>
+              <path>self::node()</path>
+              <context>self</context>
+            </delete>
           </actions>
         </properties>
         <children/>
@@ -790,7 +798,10 @@
                   <path>self::node()</path>
                   <context>self</context>
                 </update>
-                <delete>NULL</delete>
+                <delete>
+                  <path>self::node()</path>
+                  <context>self</context>
+                </delete>
               </actions>
             </properties>
             <children/>
@@ -826,7 +837,10 @@
                   <path>self::node()</path>
                   <context>self</context>
                 </update>
-                <delete>NULL</delete>
+                <delete>
+                  <path>self::node()</path>
+                  <context>self</context>
+                </delete>
               </actions>
             </properties>
             <children/>
@@ -863,7 +877,10 @@
                   <path>self::node()</path>
                   <context>self</context>
                 </update>
-                <delete>NULL</delete>
+                <delete>
+                  <path>self::node()</path>
+                  <context>self</context>
+                </delete>
               </actions>
             </properties>
             <children/>
@@ -901,7 +918,10 @@
                   <path>self::node()</path>
                   <context>self</context>
                 </update>
-                <delete>NULL</delete>
+                <delete>
+                  <path>self::node()</path>
+                  <context>self</context>
+                </delete>
               </actions>
             </properties>
             <children/>
